@@ -12,11 +12,11 @@ public class VotoResource {
 
     @Inject
     VotoService votoService;
+
     @Path("/")
     @POST
     public Response registrarVoto(VotoDto  votoDto){
         votoService.registrarVoto(votoDto);
         return Response.ok().build();
     }
-    
 }

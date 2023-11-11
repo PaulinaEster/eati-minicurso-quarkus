@@ -1,10 +1,8 @@
 package info.eati.quarkus.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class VotoDto {
     private Long idJogador;
 }
